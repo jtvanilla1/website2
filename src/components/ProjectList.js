@@ -3,8 +3,8 @@ import Project from './Project'
 
 export default function ProjectList({ projects }) {
     return (
-        projects.map(data => {
-            return <Project key={data} data={data} />
+        projects.map(project => {
+            return <Project key={project.name} project={project} />
         })
     )
 }
