@@ -1,0 +1,58 @@
+/* navbar styling */
+
+.name-font {
+    font-family: "Courier New", Courier, 'Courier New', Courier, monospace;
+    font-size: 22px;
+    color: rgb(146, 241, 253);
+    text-shadow: 2px 2px black;
+    margin-right: 50px;
+}
+
+.navbar {
+    display: inline-block;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+}
+
+
+/* navbar list */
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    list-style-type: none;
+}
+
+
+/* navbar list items */
+
+.navbar ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.navbar ul li a {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent;
+    color: rgb(146, 241, 253);
+    text-shadow: 2px 2px black;
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(174, 245, 245);
+}
+
+
+/* body ------------------------------------------*/
+
+body {
+    background-image: url("img/bg/header-bg.jpg");
+}
