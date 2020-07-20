@@ -1,47 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- links -->
+
+<!-- styles -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles/main.css" rel="stylesheet">
+<link rel="stylesheet" href="styles/navbar.css" rel="stylesheet">
+<link rel="stylesheet" href="styles/modal.css" rel="stylesheet">
+
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+<!-- scripts -->
 <script src="https://kit.fontawesome.com/5451538f91.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="modal.js"></script>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+
+
+<!-- Head -->
+
+<head>
+    <title>Josiah Manning</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
 <!-- Body-->
 
-<body>
+<body onload="modal('home')">
+
     <!-- Navigation -->
     <nav class="navbar">
         <ul>
             <li>
-                <h1 class="name-font">
-                    Josiah Manning
-                </h1>
-            </li>
-            <li class="nav-li nav-home-li">
-                <a href="#home" class="w3-button w3-bar-item">
-                    <i class="fa fa-home"></i> Home
+                <a href="#" onclick="modal('home')" class="name">
+                    <h1 class="name-font">
+                        Josiah Manning
+                    </h1>
                 </a>
             </li>
-            <li class="nav-li nav-portfolio-li">
-                <a href="#portfolio" class="w3-button w3-bar-item">
+            <li>
+                <a href="#" onclick="modal('portfolio')" class="w3-button w3-bar-item">
                     <i class="fa fa-code"></i> Portfolio
                 </a>
             </li>
-            <li class="nav-li nav-resume-li">
-                <a href="https://drive.google.com/file/d/1VHgdZ8SQidBRo4EtiE1pW8WG8TngpIic/view?usp=sharing" class="w3-button w3-bar-item">
+            <li>
+                <a href="#" onclick="modal('resume')" class="w3-button w3-bar-item">
                     <i class="fa fa-file-text-o"></i> Resume
                 </a>
             </li>
-            <li class="nav-li nav-contact-li">
-                <a href="#contact" class="w3-button w3-bar-item">
+            <li>
+                <a href="#" onclick="modal('contact');" class="w3-button w3-bar-item">
                     <i class="fa fa-mobile"></i> Contact
                 </a>
             </li>
         </ul>
     </nav>
+    <!-- background video -->
     <video autoplay muted loop id="backgroundVideo">
-        <source src="https://youtu.be/AMNyQds2ABQ" type="video/mp4">
-        <img src="img/bg/header-bg.jpg" alt="Your browser does not support HTML5 video">
+        <source src="img/bg/background.mp4" type="video/mp4">
     </video>
+
+    <!-- portfolio -->
+    <div id="home" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <p>Junior Software Developer</p>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+
+    <!-- resume -->
+    <div id="resume" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="https://drive.google.com/file/d/1VHgdZ8SQidBRo4EtiE1pW8WG8TngpIic/preview" width="90%" height="720"></iframe>
+            <a href="docs/JosiahManningResume2020.pdf" target="_blank" download><br>Click here to download pdf</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <!-- FIX STYLING ORG AND MAKE PRETTIER -->
+            <header>
+                <h1 style="text-align: center;">Contact</h1>
+            </header>
+            <div style="text-align: center;">
+                <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="josiah-manning">
+                    <a class="LI-simple-link" href='https://www.linkedin.com/in/josiah-manning?trk=profile-badge'>Josiah Manning</a>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <div>
+                    <p><strong> Location:</strong> Portland Metro Area, OR
+                    </p>
+                </div>
+                <div>
+                    <p><strong> Cell No:</strong> 562-298-7901 </p>
+                </div>
+                <div>
+                    <p>
+                        <strong> Email:</strong> josiah.t.manning@biola.edu
+                    </p>
+                </div>
+                <ul style="list-style-type: none;">
+                    <li><a class="facebook-icon" href="https://www.facebook.com/josiah.manning.963"><i
+                                            class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter-icon" href="https://twitter.com/jtvanilla1"><i
+                                            class="fa fa-twitter"></i></a></li>
+                    <li><a class="linkedin-icon" href="https://www.linkedin.com/in/josiah-manning/"><i
+                                            class="fa fa-linkedin"></i></a></li>
+                    <li><a class="github-icon" href="https://github.com/jtvanilla1"><i
+                                            class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
