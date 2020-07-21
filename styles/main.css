@@ -1,4 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    word-break: break-all;
+}
+
+h3 {
+    display: flex;
+}
+
 body {
+    background-color: white;
     margin: 0;
     padding: 0;
 }
